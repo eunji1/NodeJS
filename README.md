@@ -53,3 +53,6 @@
 |Section34|Deno 소개||
 |Section35|Deno, CRUD 및 데이터베이스(MongoDB)||
 |Section36|전체 요약||
+
+유튜브 
+(https://www.youtube.com/watch?v=Tt_tKhhhJqY)

@@ -2,15 +2,41 @@
 // http 모듈 불러오기
 
 const http = require("http");
+const fs = require("fs");
 
 // createsever callback 함수
 // 서버에 요청이 들어볼 때마다 nodeJS가 호출하게 됨
 // EDA 표현 기법
-http.createServer(function (req, res) {});
-http.createServer((req, res) => {});
+// http.createServer(function (req, res) {});
+// http.createServer((req, res) => {});
 
 const server = http.createServer((req, res) => {
-  console.log(req);
+  //   console.log(req.url, req.method, req.header);
+  //   process.exit();
+  const url = req.url;
+  const method = req.method;
+  // 라우터 요청 보내기
+  if (url === "/") {
+    res.write("<html>");
+    res.write("<head><title>Enter Message</title></head>");
+    res.write(
+      `<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></input></form></body>`
+    );
+    res.write("</html>");
+    return res.end();
+  }
+  if (url === "/message" && method === "POST") {
+    fs.writeFileSync("messate.txt", "DUMMY");
+    res.statusCode = 302;
+    res.setHeader("Location", "/");
+    return res.end();
+  }
+  res.setHeader("Content-Type", "text/html");
+  res.write("<html>");
+  res.write("<head><title>My First Page</title></head>");
+  res.write("<body><h1>Hello World!</h1></body>");
+  res.write("</html>");
+  res.end();
 });
 
 // 포트 지정
