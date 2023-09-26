@@ -33,14 +33,14 @@ const server = http.createServer((req, res) => {
     });
     req.on("end", () => {
       const parsedBody = Buffer.concat(body).toString();
-      console.log(parsedBody);
       // message는 key-value 값으로 저장된다.
       const message = parsedBody.split("=")[1];
-      fs.writeFileSync("message.txt", message);
+      fs.writeFileSync("message.txt", message, (err) => {
+        res.statusCode = 302;
+        res.setHeader("Location", "/");
+        return res.end();
+      });
     });
-    res.statusCode = 302;
-    res.setHeader("Location", "/");
-    return res.end();
   }
   res.setHeader("Content-Type", "text/html");
   res.write("<html>");
