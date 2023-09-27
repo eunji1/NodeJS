@@ -35,6 +35,7 @@ const server = http.createServer((req, res) => {
       const parsedBody = Buffer.concat(body).toString();
       // message는 key-value 값으로 저장된다.
       const message = parsedBody.split("=")[1];
+      // fs.writeFileSync, fs.writeFile
       fs.writeFileSync("message.txt", message, (err) => {
         res.statusCode = 302;
         res.setHeader("Location", "/");
