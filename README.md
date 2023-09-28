@@ -20,8 +20,8 @@
 |Section1|소개||✅☑✔|
 |Section2|JS 간단 복습||✅☑✔|
 |Section3|기본 개념 이해|[📁][Section3]|✅☑✔|
-|Section4|개선된 개발 워크플로우 및 디버깅|[📁][Section4]||
-|Section5|Express.js 작업|||
+|Section4|개선된 개발 워크플로우 및 디버깅|[📁][Section4]|✅☑✔|
+|Section5|Express.js 작업|[📁][Section5]||
 |Section6|동적 콘텐츠 작업 및 템플릿 엔진 추가|||
 |Section7|모델 뷰 컨트롤러(MVC)|||
 |Section8|선택사항: 앱 향상|||
@@ -56,6 +56,7 @@
 
 [Section3]: Section3
 [Section4]: Section4
+[Section5]: Section5
 
 유튜브 
 (https://www.youtube.com/watch?v=Tt_tKhhhJqY)
