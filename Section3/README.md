@@ -41,3 +41,11 @@ createServer로 만든 이벤트 리스너는 서버가 계속 운영되기위�
 ### 37. Node 백그라운드 확인
 
 싱글스레드 ,이벤트루프, 블로킹 코드
+
+
+### 참고자료
+
+- [공식 Node.js 자료](https://nodejs.org/en/docs/guides/)
+- [모든 코어 모듈에 대한 Node.js 참고자료](https://nodejs.org/dist/latest/docs/api/)
+- [Node.js 이벤트 루프 추가 자료](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
+- [블로킹 및 논블로킹 코드](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
