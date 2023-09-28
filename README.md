@@ -19,7 +19,7 @@
 |---|---|---|
 |Section1|소개|✅☑✔|
 |Section2|JS 간단 복습|✅☑✔|
-|Section3|기본 개념 이해||
+|Section3|기본 개념 이해|✅☑✔|
 |Section4|개선된 개발 워크플로우 및 디버깅||
 |Section5|Express.js 작업||
 |Section6|동적 콘텐츠 작업 및 템플릿 엔진 추가||
