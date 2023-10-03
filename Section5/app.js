@@ -1,19 +1,17 @@
-const http = require("http");
-
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
-// 미들웨어 사용
-app.use((req, res, next) => {
-  console.log("In the middleware!");
-  next();
-});
 
-app.use((req, res, next) => {
-  console.log("In another middleware!");
-  // 기본 응답헤더는 text/html
-  res.send("<h1>Hello, from Express</h1>");
-});
+const adminRoutes = require("./routes/admin");
+const shopRoutes = require("./routes/shop");
+// 미들웨어 사용
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(adminRoutes);
+
+app.use(shopRoutes);
 
 const server = http.createServer(app);
 
