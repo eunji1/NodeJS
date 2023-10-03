@@ -10,6 +10,8 @@ const shopRoutes = require("./routes/shop");
 // 미들웨어 사용
 
 app.use(bodyParser.urlencoded({ extended: false }));
+// 정적으로 파일 불러오기 위한 코드
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
