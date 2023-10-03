@@ -1,6 +1,6 @@
 # Section 5: Express.js 작업
 
-### 59.express.js 설치
+### 59. express.js 설치
 
 ```bash
 npm install --save express
