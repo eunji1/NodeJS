@@ -2,23 +2,27 @@ const path = require("path");
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const expressHbs = require("express-handlebars");
+// const expressHbs = require("express-handlebars");
 
 const app = express();
 
-// pug (내장된 엔진)
+// 1. pug
 // app.set('view engine', 'pug');
 // app.set('views', 'views');
 
-app.engine(
-  "hbs",
-  expressHbs({
-    layoutsDir: "views/layouts/",
-    defaultLayout: "main-layout",
-    extname: "hbs",
-  })
-);
-app.set("view engine", "hbs");
+// 2. handlebars
+// app.engine(
+//   "hbs",
+//   expressHbs({
+//     layoutsDir: "views/layouts/",
+//     defaultLayout: "main-layout",
+//     extname: "hbs",
+//   })
+// );
+// app.set("view engine", "hbs");
+// app.set("views", "views");
+
+app.set("view engine", "ejs");
 app.set("views", "views");
 
 const adminData = require("./routes/admin");

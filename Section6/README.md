@@ -26,6 +26,12 @@
 npm install --save ejs pug express-handlebars
 ```
 
+```js
+// 1. pug (내장된 엔진)
+app.set('view engine', 'pug');
+app.set('views', 'views');
+```
+
 ### 82. 동적 콘텐츠 출력
 
 **Q. res.render의 의미**
@@ -37,6 +43,41 @@ npm install --save ejs pug express-handlebars
 3. res.json
    - json이 아니어도 json 형식으로 바꾸어 보냄 .Content-type 헤더를 application/JSON으로 고정. 마지막에 res.send() 호출함
 
-### 83. 공식 Pug 문서
+### 88. 핸들바 작업
 
-[Pug 문서](https://pugjs.org/api/getting-started.html)
+Handlerbars 설치
+```bash
+npm install --save express-handlebars@3.0
+```
+
+```js
+// 2. handlebars 내장x, 불러와야함
+const expressHbs = require("express-handlebars");
+
+// custom
+app.engine(
+  "hbs",
+  expressHbs({
+    layoutsDir: "views/layouts/",
+    defaultLayout: "main-layout",
+    extname: "hbs",
+  })
+);
+app.set("view engine", "hbs");
+app.set("views", "views");
+```
+
+### 91. EJS로 작업하기
+
+```js
+// ejs
+app.set("view engine", "ejs");
+app.set("views", "views");
+```
+
+### 95. 참고 자료
+- [Pug 참고자료](https://pugjs.org/api/getting-started.html)
+
+- [Handlebars 참고자료](https://handlebarsjs.com/)
+
+- [EJS 참고자료](http://ejs.co/#docs)
