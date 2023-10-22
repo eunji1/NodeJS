@@ -13,12 +13,15 @@ exports.postAddProduct = (req, res, next) => {
   const imageUrl = req.body.imageUrl;
   const price = req.body.price;
   const description = req.body.description;
-  Product.create({
-    title: title,
-    price: price,
-    imageUrl: imageUrl,
-    description: description,
-  })
+  const userId = req.user.id;
+  req.user
+    .createProduct({
+      title: title,
+      price: price,
+      imageUrl: imageUrl,
+      description: description,
+      userId: userId,
+    })
     .then((result) => {
       console.log("Created Product");
       res.redirect("/admin/products");
@@ -27,15 +30,17 @@ exports.postAddProduct = (req, res, next) => {
       console.log(err);
     });
 };
-// https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg
 exports.getEditProduct = (req, res, next) => {
   const editMode = req.query.edit;
   if (!editMode) {
     return res.redirect("/");
   }
   const prodId = req.params.productId;
-  Product.findById(prodId)
-    .then((product) => {
+  req.user
+    .getProducts({ where: { id: prodId } })
+    // Product.findById(prodId)
+    .then((products) => {
+      const product = products[0];
       if (!product) {
         return res.redirect("/");
       }
@@ -71,6 +76,7 @@ exports.postEditProduct = (req, res, next) => {
 };
 
 exports.getProducts = (req, res, next) => {
+  req.user.getProducts();
   Product.findAll()
     .then((products) => {
       res.render("admin/products", {
