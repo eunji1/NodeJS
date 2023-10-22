@@ -25,7 +25,7 @@
 |Section6|동적 콘텐츠 작업 및 템플릿 엔진 추가|[📁][Section6]|✅☑✔|
 |Section7|모델 뷰 컨트롤러(MVC)|[📁][Section7]|✅☑✔|
 |Section8|선택사항: 앱 향상|||
-|Section9|동적 라우트 및 고급 모델|[📁][Section9]||
+|Section9|동적 라우트 및 고급 모델|[📁][Section9]|✅☑✔|
 |Section10|SQL 소개|||
 |Section11|Sequelize의 이해|||
 |Section12|NoSQL 작업 및 MongoDB 사용|||
