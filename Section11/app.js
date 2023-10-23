@@ -44,7 +44,8 @@ Cart.belongsToMany(Product, { through: CartItem });
 Product.belongsToMany(Cart, { through: CartItem });
 
 sequelize
-  .sync({ force: true })
+  // .sync({ force: true }) // 데이터 덮어쓰기
+  .sync()
   .then((result) => {
     return User.findByPk(1);
     // console.log(result);
@@ -53,10 +54,12 @@ sequelize
     if (!user) {
       return User.create({ name: "Max", email: "email@test.com" });
     }
-    return Promise.resolve(user);
+    return user;
   })
   .then((user) => {
-    console.log(3000);
+    return user.createCart();
+  })
+  .then((cart) => {
     app.listen(3000);
   })
   .catch((err) => {
