@@ -31,7 +31,7 @@
 | Section11 | Sequelize의 이해                         | [📁][Section11] | ✅☑✔     |
 | Section12 | NoSQL 작업 및 MongoDB 사용               | [📁][Section12] | ✅☑✔     |
 | Section13 | Mongoose 작업                            | [📁][Section13] | ✅☑✔     |
-| Section14 | 세션 및 쿠키                             | [📁][Section14] |          |
+| Section14 | 세션 및 쿠키                             | [📁][Section14] | ✅☑✔     |
 | Section15 | 인증 추가                                |                 |          |
 | Section16 | 이메일 전송                              |                 |          |
 | Section17 | 고급 인증                                |                 |          |
