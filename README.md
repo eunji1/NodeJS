@@ -32,9 +32,9 @@
 | Section12 | NoSQL 작업 및 MongoDB 사용               | [📁][Section12] | ✅☑✔     |
 | Section13 | Mongoose 작업                            | [📁][Section13] | ✅☑✔     |
 | Section14 | 세션 및 쿠키                             | [📁][Section14] | ✅☑✔     |
-| Section15 | 인증 추가                                |                 |          |
-| Section16 | 이메일 전송                              |                 |          |
-| Section17 | 고급 인증                                |                 |          |
+| Section15 | 인증 추가                                | [📁][Section15] | ✅☑✔     |
+| Section16 | 이메일 전송                              | [📁][Section16] | ✅☑✔     |
+| Section17 | 고급 인증                                | [📁][Section17] | ✅☑✔     |
 | Section18 | 검증 이해                                |                 |          |
 | Section19 | 오류 처리                                |                 |          |
 | Section20 | 파일 업로드 및 다운로드                  |                 |          |
@@ -66,6 +66,9 @@
 [Section12]: Section12
 [Section13]: Section13
 [Section14]: Section14
+[Section15]: Section15
+[Section16]: Section16
+[Section17]: Section17
 
 유튜브
 (https://www.youtube.com/watch?v=Tt_tKhhhJqY)
