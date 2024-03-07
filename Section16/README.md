@@ -4,8 +4,7 @@
 
 - 이메일 전송 기능 구현
 
-### 273. Nodemailer 사요앻 이메일 보내기
-
+### 273. Nodemailer 사용해 이메일 보내기
 
 ```ts
 // controller/auth
