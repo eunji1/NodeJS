@@ -35,8 +35,8 @@
 | Section15 | 인증 추가                                | [📁][Section15] | ✅☑✔     |
 | Section16 | 이메일 전송                              | [📁][Section16] | ✅☑✔     |
 | Section17 | 고급 인증                                | [📁][Section17] | ✅☑✔     |
-| Section18 | 검증 이해                                | [📁][Section18] |          |
-| Section19 | 오류 처리                                |                 |          |
+| Section18 | 검증 이해                                | [📁][Section18] | ✅☑✔     |
+| Section19 | 오류 처리                                | [📁][Section19] | ✅☑✔     |
 | Section20 | 파일 업로드 및 다운로드                  |                 |          |
 | Section21 | 페이지화(Pagination) 추가                |                 |          |
 | Section22 | 비동기 요청 이해                         |                 |          |
@@ -70,6 +70,7 @@
 [Section16]: Section16
 [Section17]: Section17
 [Section18]: Section18
+[Section19]: Section19
 
 유튜브
 (https://www.youtube.com/watch?v=Tt_tKhhhJqY)
