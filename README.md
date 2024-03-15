@@ -37,7 +37,7 @@
 | Section17 | 고급 인증                                | [📁][Section17] | ✅☑✔     |
 | Section18 | 검증 이해                                | [📁][Section18] | ✅☑✔     |
 | Section19 | 오류 처리                                | [📁][Section19] | ✅☑✔     |
-| Section20 | 파일 업로드 및 다운로드                  | [📁][Section20] |          |
+| Section20 | 파일 업로드 및 다운로드                  | [📁][Section20] | ✅☑✔     |
 | Section21 | 페이지화(Pagination) 추가                |                 |          |
 | Section22 | 비동기 요청 이해                         |                 |          |
 | Section23 | 결제 기능 추가                           |                 |          |
