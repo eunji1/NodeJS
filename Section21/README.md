@@ -1,4 +1,4 @@
-# Section 20: Pagination
+# Section 21: Pagination
 
 ### 338. 모듈 소개
 

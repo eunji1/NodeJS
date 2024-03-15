@@ -39,7 +39,7 @@
 | Section19 | 오류 처리                                | [📁][Section19] | ✅☑✔     |
 | Section20 | 파일 업로드 및 다운로드                  | [📁][Section20] | ✅☑✔     |
 | Section21 | 페이지화(Pagination) 추가                | [📁][Section21] | ✅☑✔     |
-| Section22 | 비동기 요청 이해                         |                 |          |
+| Section22 | 비동기 요청 이해                         | [📁][Section22] |          |
 | Section23 | 결제 기능 추가                           |                 |          |
 | Section24 | REST API 작업-기본개념                   |                 |          |
 | Section25 | REST API 작업-실용적인 애플리케이션 생성 |                 |          |
@@ -73,6 +73,7 @@
 [Section19]: Section19
 [Section20]: Section20
 [Section21]: Section21
+[Section21]: Section22
 
 유튜브
 (https://www.youtube.com/watch?v=Tt_tKhhhJqY)
