@@ -41,8 +41,8 @@
 | Section21 | 페이지화(Pagination) 추가                | [📁][Section21] | ✅☑✔     |
 | Section22 | 비동기 요청 이해                         | [📁][Section22] | ✅☑✔     |
 | Section23 | 결제 기능 추가                           | [📁][Section23] | ✅☑✔     |
-| Section24 | REST API 작업-기본개념                   | [📁][Section24] |          |
-| Section25 | REST API 작업-실용적인 애플리케이션 생성 |                 |          |
+| Section24 | REST API 작업-기본개념                   | [📁][Section24] | ✅☑✔     |
+| Section25 | REST API 작업-실용적인 애플리케이션 생성 | [📁][Section25] |          |
 | Section26 | Node.js내 Async/Await 이해               |                 |          |
 | Section27 | 웹 소켓 및 Socket.io 이해                |                 |          |
 | Section28 | GraphQL 작업                             |                 |          |
@@ -76,6 +76,7 @@
 [Section22]: Section22
 [Section23]: Section23
 [Section24]: Section24
+[Section25]: Section25
 
 유튜브
 (https://www.youtube.com/watch?v=Tt_tKhhhJqY)
